@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    font-size: 15px;
+}
+
+@media (max-width: 1400px) {
+    body {
+        background: rgb(124, 124, 199);
+        padding-top: 50px;
+    }
+    .box-general {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 400px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .img-1 {
+        display: block;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+    input {
+        outline: none;
+        border: 1px solid gray;
+        border-radius: 3px;
+        height: 23px;
+        font-size: 12px;
+        padding-left: 10px;
+    }
+    a {
+        list-style: none;
+        color: rgb(25, 30, 92);
+        text-decoration: none;
+        cursor: pointer;
+        transition: .3s;
+    }
+    a:hover {
+        color: rgb(29, 61, 54);
+        transition: .3s;
+    }
+    .sub-box1 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background: white;
+        text-align: center;
+        padding: 20px 50px;
+    }
+    .line {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1px 0;
+    }
+    .line hr {
+        flex: 1;
+        height: 1px;
+        border: none;
+        background-color: #ccc;
+        margin: 0 10px;
+    }
+    .line span {
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        background: rgb(131, 146, 212);
+    }
+    .box-general {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .sub-box1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px 20%;
+    }
+}
