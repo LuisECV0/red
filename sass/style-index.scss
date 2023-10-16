@@ -15,14 +15,31 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 
     h1 {
         margin: 0;
         padding: 0;
         font-size: 25px;
     }
+    .menu_bar {
+        
+        .btn_menu {
+            list-style: none;
+            text-decoration: none;
+            color: #dedee6;
+            i {
+                color: #dedee6;
+                margin: 0 10px;
+            }
+        }
+    }
 
     .nav {
+        width:90%;
+        max-width:1000px;
+        margin:20px auto;
+        background:#024959;
         ul {
             list-style: none;
             display: flex;
@@ -32,25 +49,34 @@ header {
             width: auto;
             margin: 2px 0;
             padding: 0 10px;
-        }
-        li {
-            display: flex;
-            border-radius: 5px;
-            display: flex;
-            text-align: center;
-            align-items: center;
-            padding: 0 20px;
-            transition: .4s;
-
-            &:hover {
-                background-color: #59597c;
+            border: 1px solid red;
+            overflow:hidden;
+	
+            li {
+                display: flex;
+                border-radius: 5px;
+                display: flex;
+                text-align: center;
+                align-items: center;
+                padding: 0 20px;
                 transition: .4s;
-            }
-            a {
-                color: rgb(207, 201, 201);
-                text-decoration: none;
-            }
+                border: 1px solid green;
+                float:left;
+                &:hover {
+                    background-color: #59597c;
+                    transition: .4s;
+                }
+                a {
+                    color: rgb(207, 201, 201);
+                    text-decoration: none;
+                    padding:20px;
+	                display:block;
+                }
+            
+            } 
+ 
         }
+
     }
 }
 .looking{

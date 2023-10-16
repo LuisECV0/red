@@ -12,11 +12,27 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 header h1 {
   margin: 0;
   padding: 0;
   font-size: 25px;
+}
+header .menu_bar .btn_menu {
+  list-style: none;
+  text-decoration: none;
+  color: #dedee6;
+}
+header .menu_bar .btn_menu i {
+  color: #dedee6;
+  margin: 0 10px;
+}
+header .nav {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  background: #024959;
 }
 header .nav ul {
   list-style: none;
@@ -27,8 +43,10 @@ header .nav ul {
   width: auto;
   margin: 2px 0;
   padding: 0 10px;
+  border: 1px solid red;
+  overflow: hidden;
 }
-header .nav li {
+header .nav ul li {
   display: flex;
   border-radius: 5px;
   display: flex;
@@ -36,14 +54,18 @@ header .nav li {
   align-items: center;
   padding: 0 20px;
   transition: 0.4s;
+  border: 1px solid green;
+  float: left;
 }
-header .nav li:hover {
+header .nav ul li:hover {
   background-color: #59597c;
   transition: 0.4s;
 }
-header .nav li a {
+header .nav ul li a {
   color: rgb(207, 201, 201);
   text-decoration: none;
+  padding: 20px;
+  display: block;
 }
 
 .looking {
